@@ -69,9 +69,12 @@ export default function Hero() {
             </Paragraf>
 
             <div className="relative m-auto w-[280px] tab:w-[230px] pc:w-[294px]">
-              <button className="block relative text-white font-[700] uppercase text-[18px] bg-btn px-[64px] py-[3px] mx-auto hover:bg-btnHov z-20 leading-[48px] w-[280px] tab:w-[230px] tab:leading-normal tab:py-[12px] pc:w-[294px] pc:text-[32px] tab:py-[9px]">
+              <a
+                href="#Contacts"
+                className="block relative text-white font-[700] uppercase text-[18px] bg-btn px-[64px] py-[3px] mx-auto hover:bg-btnHov z-20 leading-[48px] w-[280px] tab:w-[230px] tab:leading-normal tab:py-[12px] pc:w-[294px] pc:text-[32px] tab:py-[9px]"
+              >
                 Join Now
-              </button>
+              </a>
               <span className="w-[280px] flex justify-between absolute top-0 left-0 tab:hidden">
                 <svg className="w-[42px] h-[53px]">
                   <use href="./symbol-defs.svg#mbLeft" width={42} height={53} />
