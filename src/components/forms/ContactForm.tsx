@@ -27,27 +27,32 @@ export default function ContactForm() {
       className="tab:flex tab:gap-[20px] pc:flex-col"
     >
       <div className="mb-[16px] tabM:w-[221px] pc:flex pc:gap-[20px] ">
-        <Label label="Full name" classes="mb-[16px] text-black pc:w-[293px]">
-          <Input
-            classes={errors.fullname ? "text-[#FF5757]" : ""}
-            type="text"
-            placeholder="John Smith"
-            some={register("fullname", { required: true })}
-          />
-        </Label>
-        {errors.fullname && <ErrorMes>This field is required</ErrorMes>}
-        <Label label=" E-mail" classes="pc:w-[293px]">
-          <Input
-            classes={errors.email ? "text-[#FF5757]" : ""}
-            type="email"
-            placeholder="johnsmith@email.com"
-            some={register("email", {
-              required: true,
-              pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-            })}
-          />
-        </Label>
-        {errors.email && <ErrorMes>Invalid email</ErrorMes>}
+        <div>
+          {" "}
+          <Label label="Full name" classes="mb-[16px] text-black pc:w-[293px]">
+            <Input
+              classes={errors.fullname ? "text-[#FF5757]" : ""}
+              type="text"
+              placeholder="John Smith"
+              some={register("fullname", { required: true })}
+            />
+          </Label>
+          {errors.fullname && <ErrorMes>This field is required</ErrorMes>}
+        </div>
+        <div>
+          <Label label=" E-mail" classes="pc:w-[293px]">
+            <Input
+              classes={errors.email ? "text-[#FF5757]" : ""}
+              type="email"
+              placeholder="johnsmith@email.com"
+              some={register("email", {
+                required: true,
+                pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+              })}
+            />
+          </Label>
+          {errors.email && <ErrorMes>Invalid email</ErrorMes>}
+        </div>
       </div>
 
       <div className="tab:w-[463px] pc:w-[607px]">
