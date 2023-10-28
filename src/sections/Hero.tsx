@@ -74,20 +74,28 @@ export default function Hero() {
               </button>
               <span className="w-[280px] flex justify-between absolute top-0 left-0 tab:hidden">
                 <svg className="w-[42px] h-[53px]">
-                  <use href="/symbol-defs.svg#mbLeft" width={42} height={53} />
+                  <use href="./symbol-defs.svg#mbLeft" width={42} height={53} />
                 </svg>
                 <svg className="w-[42px] h-[53px]">
-                  <use href="/symbol-defs.svg#mbRight" width={42} height={53} />
+                  <use
+                    href="./symbol-defs.svg#mbRight"
+                    width={42}
+                    height={53}
+                  />
                 </svg>
               </span>
 
               <span className="w-[230px] flex justify-between absolute top-0 left-0 mob:hidden pc:hidden">
                 <svg className="w-[35px] h-[50px]">
-                  <use href="/symbol-defs.svg#tabLeft" width={35} height={50} />
+                  <use
+                    href="./symbol-defs.svg#tabLeft"
+                    width={35}
+                    height={50}
+                  />
                 </svg>
                 <svg className="w-[35px] h-[50px]">
                   <use
-                    href="/symbol-defs.svg#tabRight"
+                    href="./symbol-defs.svg#tabRight"
                     width={35}
                     height={50}
                   />
@@ -96,11 +104,15 @@ export default function Hero() {
 
               <span className="w-[293px]  justify-between absolute top-[-3px] left-0 mob:hidden tab:hidden pc:flex ">
                 <svg className="w-[44px] h-[71px]">
-                  <use href="/symbol-defs.svg#tabLeft" width={44} height={71} />
+                  <use
+                    href="./symbol-defs.svg#tabLeft"
+                    width={44}
+                    height={71}
+                  />
                 </svg>
                 <svg className="w-[44px] h-[71px]">
                   <use
-                    href="/symbol-defs.svg#tabRight"
+                    href="./symbol-defs.svg#tabRight"
                     width={44}
                     height={71}
                   />
