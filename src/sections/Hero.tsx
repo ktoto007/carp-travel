@@ -71,7 +71,7 @@ export default function Hero() {
             <div className="relative m-auto w-[280px] tab:w-[230px] pc:w-[294px]">
               <a
                 href="#Contacts"
-                className="block relative text-white text-center font-[700] uppercase text-[18px] bg-btn px-[64px] py-[3px] mx-auto hover:bg-btnHov z-20 leading-[48px] w-[280px] tab:w-[230px] tab:leading-normal tab:h-[51px] tab:py-[12px] pc:w-[294px] pc:text-[32px] tab:py-[9px]"
+                className="block relative text-white text-center font-[700] uppercase text-[18px] bg-btn px-[64px] py-[3px] mx-auto hover:bg-btnHov z-20 leading-[48px] w-[280px] tab:w-[230px] tab:leading-normal tabM:h-[51px] tab:py-[12px] pc:w-[294px] pc:text-[32px] tab:py-[9px]"
               >
                 Join Now
               </a>
