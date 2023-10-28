@@ -26,7 +26,7 @@ function imgSize(width: number): string {
   if (width > 1279) {
     return "pc";
   }
-  if (width > 779) {
+  if (width > 767) {
     return "tb";
   }
 
