@@ -5,8 +5,6 @@ import Title from "./Title";
 import { useState, useEffect } from "react";
 import { useSwiper } from "swiper/react";
 
-const basePath = process.env.basePath || ".";
-
 type slide = {
   num: string;
   imgUrl: string;
@@ -56,7 +54,7 @@ export default function ServisesSlide({
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  const img = `${basePath}/${imgSize(windowWidth)}-${imgUrl}`;
+  const img = `/${imgSize(windowWidth)}-${imgUrl}`;
 
   const swiper = useSwiper();
   const styles = `px-[20px] mob:pt-[54px] mob:pb-[56px] mob:max-w-[480px] mob:min-h-[851px] mob:bg-cover ${bgUrl} tab:min-h-[621px] tab:w-[768px] tab:px-[32px]   tab:py-[24px] pc:min-h-[779px]  pc:w-[1280px] pc:px-[104px] pc:py-[89px]`;
