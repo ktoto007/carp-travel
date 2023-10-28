@@ -37,7 +37,13 @@ export default function GallerySlide({ imgUrl }: slyde) {
   return (
     <ul className="flex gap-[24px]">
       <li className="flex items-center flex-wrap justify-end content-end gap-y-[47px] pc:gap-y-[30px]">
-        <Image src={imgUrl[0]} width={smallW} height={smallH} alt="" />
+        <Image
+          loading="lazy"
+          src={imgUrl[0]}
+          width={smallW}
+          height={smallH}
+          alt=""
+        />
         <button
           className="text-[33px] font-[100] text-white"
           onClick={() => swiper.slidePrev()}
@@ -46,10 +52,22 @@ export default function GallerySlide({ imgUrl }: slyde) {
         </button>
       </li>
       <li>
-        <Image src={imgUrl[1]} width={currentW} height={currentH} alt="" />
+        <Image
+          loading="lazy"
+          src={imgUrl[1]}
+          width={currentW}
+          height={currentH}
+          alt=""
+        />
       </li>
       <li className="flex items-center flex-wrap justify-start content-end gap-y-[47px] pc:gap-y-[30px]">
-        <Image src={imgUrl[2]} width={smallW} height={smallH} alt="" />
+        <Image
+          loading="lazy"
+          src={imgUrl[2]}
+          width={smallW}
+          height={smallH}
+          alt=""
+        />
         <button
           className="text-[33px] font-[100] text-white"
           onClick={() => swiper.slideNext()}

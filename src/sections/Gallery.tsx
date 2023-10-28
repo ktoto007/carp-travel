@@ -21,6 +21,7 @@ export default function Gallery() {
       <ul className="mob:block ml-auto mr-auto w-[280px] hidden ">
         <li className=" mt-[24px] mb-[24px]">
           <Image
+            loading="lazy"
             src="./mb-mountins.png"
             width={280}
             height={187}
@@ -29,6 +30,7 @@ export default function Gallery() {
         </li>
         <li className=" mb-[24px]">
           <Image
+            loading="lazy"
             src="./mb-lake.png"
             width={280}
             height={187}
@@ -37,6 +39,7 @@ export default function Gallery() {
         </li>
         <li>
           <Image
+            loading="lazy"
             src="./mb-houseInForest.png"
             width={280}
             height={187}

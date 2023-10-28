@@ -73,13 +73,31 @@ export default function ServisesSlide({
 
       <div className="tab:flex tab:gap-[20px]">
         {windowWidth > 1279 && (
-          <Image src={img} width={607} height={409} alt={textCall} />
+          <Image
+            loading="lazy"
+            src={img}
+            width={607}
+            height={409}
+            alt={textCall}
+          />
         )}
         {windowWidth > 767 && windowWidth < 1280 && (
-          <Image src={img} width={463} height={370} alt={textCall} />
+          <Image
+            loading="lazy"
+            src={img}
+            width={463}
+            height={370}
+            alt={textCall}
+          />
         )}
         {windowWidth < 768 && (
-          <Image src={img} width={330} height={240} alt={textCall} />
+          <Image
+            loading="lazy"
+            src={img}
+            width={330}
+            height={240}
+            alt={textCall}
+          />
         )}
 
         <div className="mob:mt-[12px] pc:flex  pc:flex-wrap">
