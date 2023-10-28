@@ -116,7 +116,7 @@ export default function ServisesSlide({
                           <span className="flex items-center mr-[8px]">
                             <svg className="w-[10px] h-[10px]">
                               <use
-                                href="/symbol-defs.svg#listRhombus"
+                                href="./symbol-defs.svg#listRhombus"
                                 width={8}
                                 height={8}
                               ></use>

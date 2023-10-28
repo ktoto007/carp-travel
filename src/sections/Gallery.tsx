@@ -51,37 +51,37 @@ export default function Gallery() {
           spaceBetween={30}
           centeredSlides={true}
           slidesPerView={1}
-          // autoplay={{
-          //   delay: 3000,
-          //   disableOnInteraction: false,
-          // }}
-          // loop={true}
-          // modules={[Autoplay]}
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+          modules={[Autoplay]}
         >
           <SwiperSlide>
             <GallerySlide
               imgUrl={[
-                "/sliderMountins.png",
-                "/sliderLake.png",
-                "/sliderHouseInForest.png",
+                "./sliderMountins.png",
+                "./sliderLake.png",
+                "./sliderHouseInForest.png",
               ]}
             />
           </SwiperSlide>
           <SwiperSlide>
             <GallerySlide
               imgUrl={[
-                "/sliderLake.png",
-                "/sliderHouseInForest.png",
-                "/sliderMountins.png",
+                "./sliderLake.png",
+                "./sliderHouseInForest.png",
+                "./sliderMountins.png",
               ]}
             />
           </SwiperSlide>
           <SwiperSlide>
             <GallerySlide
               imgUrl={[
-                "/sliderHouseInForest.png",
-                "/sliderMountins.png",
-                "/sliderLake.png",
+                "./sliderHouseInForest.png",
+                "./sliderMountins.png",
+                "./sliderLake.png",
               ]}
             />
           </SwiperSlide>

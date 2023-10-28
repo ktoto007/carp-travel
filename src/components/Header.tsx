@@ -7,7 +7,7 @@ export default function Header({ openModal }: header) {
   return (
     <div className="flex justify-between mb-[36px] tab:mb-[44px] pc:mb-[58px]">
       <Image
-        src="/Logo.png"
+        src="./Logo.png"
         width={61}
         height={34}
         alt="Logotype carp travel"
