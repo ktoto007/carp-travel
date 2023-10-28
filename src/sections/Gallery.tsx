@@ -5,6 +5,7 @@ import Title from "@/components/Title";
 import { Swiper, SwiperSlide } from "swiper/react";
 import GallerySlide from "@/components/GallerySlide";
 import { Autoplay } from "swiper/modules";
+const basePath = process.env.basePath || ".";
 
 import "swiper/css";
 export default function Gallery() {
@@ -22,7 +23,7 @@ export default function Gallery() {
         <li className=" mt-[24px] mb-[24px]">
           <Image
             loading="lazy"
-            src="./mb-mountins.png"
+            src={`${basePath}/mb-mountins.png`}
             width={280}
             height={187}
             alt="mountins"
@@ -31,7 +32,7 @@ export default function Gallery() {
         <li className=" mb-[24px]">
           <Image
             loading="lazy"
-            src="./mb-lake.png"
+            src={`${basePath}./mb-lake.png`}
             width={280}
             height={187}
             alt="lake in forest"
@@ -40,7 +41,7 @@ export default function Gallery() {
         <li>
           <Image
             loading="lazy"
-            src="./mb-houseInForest.png"
+            src={`${basePath}/mb-houseInForest.png`}
             width={280}
             height={187}
             alt="house in Forest"
@@ -64,27 +65,27 @@ export default function Gallery() {
           <SwiperSlide>
             <GallerySlide
               imgUrl={[
-                "./sliderMountins.png",
-                "./sliderLake.png",
-                "./sliderHouseInForest.png",
+                `${basePath}/sliderMountins.png`,
+                `${basePath}/sliderLake.png`,
+                `${basePath}/sliderHouseInForest.png`,
               ]}
             />
           </SwiperSlide>
           <SwiperSlide>
             <GallerySlide
               imgUrl={[
-                "./sliderLake.png",
-                "./sliderHouseInForest.png",
-                "./sliderMountins.png",
+                `${basePath}/sliderLake.png`,
+                `${basePath}/sliderHouseInForest.png`,
+                `${basePath}/sliderMountins.png`,
               ]}
             />
           </SwiperSlide>
           <SwiperSlide>
             <GallerySlide
               imgUrl={[
-                "./sliderHouseInForest.png",
-                "./sliderMountins.png",
-                "./sliderLake.png",
+                `${basePath}/sliderHouseInForest.png`,
+                `${basePath}/sliderMountins.png`,
+                `${basePath}/sliderLake.png`,
               ]}
             />
           </SwiperSlide>

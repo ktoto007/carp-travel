@@ -1,17 +1,15 @@
 "use client";
 import Image from "next/image";
+const basePath = process.env.basePath || ".";
+
 type header = {
   openModal: () => void;
 };
 export default function Header({ openModal }: header) {
+  const logoUrl = `${basePath}/Logo.png`;
   return (
     <div className="flex justify-between mb-[36px] tab:mb-[44px] pc:mb-[58px]">
-      <Image
-        src="./Logo.png"
-        width={61}
-        height={34}
-        alt="Logotype carp travel"
-      />
+      <Image src={logoUrl} width={61} height={34} alt="Logotype carp travel" />
       <button
         className="text-white text-[14px]  font-[400] tracking-[2.4px] tab:hidden"
         type="button"
