@@ -17,7 +17,7 @@ export default function Contacts() {
       <div className="mt-[36px] pc:flex pc:justify-between">
         <div className="tab:flex tabM:gap-[90px] tabM:ml-[34px] tabM:mb-[64px] pc:gap-[124px] pc:inline-flex pc:flex-col ">
           <div>
-            <div className="flex gap-[20px] tabM:justify-end mb-[24px] pc:mb-[64px]">
+            <div className="flex gap-[20px] mob:justify-end tabM:justify-end mb-[24px] pc:mb-[64px]">
               <ul className="tab:pl-[30px] pc:pl-[34px]">
                 <li>
                   <a
@@ -52,7 +52,7 @@ export default function Contacts() {
               </Span>
             </div>
           </div>
-          <div className="flex gap-[20px] tab:justify-end tabM:flex-row-reverse">
+          <div className="flex gap-[20px]  mob:flex-row-reverse tab:justify-end tabM:flex-row-reverse">
             <ul>
               <li>
                 <a
